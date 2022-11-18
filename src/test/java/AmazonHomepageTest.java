@@ -11,7 +11,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         List<String>list=amazonHomepagePage.homeCoverPhotoChangeClickAndPhotoControl();
         for (String i:list){
-            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/","\""+i+"\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/");
         }
     }
     @Test
@@ -19,7 +19,7 @@ public class AmazonHomepageTest extends BaseTest{
     public void signInControl(){
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         String location=amazonHomepagePage.signInControl();
-        Assertions.assertNotEquals(location, "https://www.amazon.com.tr/", "\"" + location + "\"sayfasına başarıyla gidilmiştir.");
+        Assertions.assertNotEquals(location, "https://www.amazon.com.tr/");
     }
     @Test
     @Order(3)
@@ -28,7 +28,7 @@ public class AmazonHomepageTest extends BaseTest{
         List<List<String>>list=amazonHomepagePage.controlBoxesPicturesAndTexts();
         for (List<String> i:list){
             for (String a:i) {
-                Assertions.assertNotEquals(a, "https://www.amazon.com.tr/", "\"" + i + "\"sayfasına başarıyla gidilmiştir.");
+                Assertions.assertNotEquals(a, "https://www.amazon.com.tr/");
             }
         }
     }
@@ -38,7 +38,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         List<String>list=amazonHomepagePage.listControl1();
         for (String i:list){
-            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/","\""+i+"\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/");
         }
     }
     @Test
@@ -47,7 +47,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         List<String>list=amazonHomepagePage.listControl2();
         for (String i:list){
-            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/","\""+i+"\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/");
         }
     }
     @Test
@@ -56,7 +56,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         List<String>list=amazonHomepagePage.listControl3();
         for (String i:list){
-            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/","\""+i+"\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/");
         }
     }
     @Test
@@ -65,7 +65,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         List<String>list=amazonHomepagePage.listControl4();
         for (String i:list){
-            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/","\""+i+"\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/");
         }
     }
     @Test
@@ -74,7 +74,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         List<String>list=amazonHomepagePage.listControl5();
         for (String i:list){
-            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/","\""+i+"\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/");
         }
     }
     @Test
@@ -83,7 +83,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage=new AmazonHomepagePage(driver);
         List<String>list=amazonHomepagePage.listControl6();
         for (String i:list){
-            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/","\""+i+"\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i,"https://www.amazon.com.tr/");
         }
     }
     @Test
@@ -92,7 +92,7 @@ public class AmazonHomepageTest extends BaseTest{
         AmazonHomepagePage amazonHomepagePage = new AmazonHomepagePage(driver);
         List<String> list = amazonHomepagePage.listControl7();
         for (String i : list) {
-            Assertions.assertNotEquals(i, "https://www.amazon.com.tr/", "\"" + i + "\"sayfasına başarıyla gidilmiştir.");
+            Assertions.assertNotEquals(i, "https://www.amazon.com.tr/");
         }
     }
 }
